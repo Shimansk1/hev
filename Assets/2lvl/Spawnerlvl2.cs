@@ -7,7 +7,7 @@ using System.Linq;
 using UnityEditor;
 using JetBrains.Annotations;
 
-public class Spawner : MonoBehaviour
+public class Spawnerlvl2 : MonoBehaviour
 {
     [SerializeField]
     GameObject theEnemy;
@@ -51,7 +51,7 @@ public class Spawner : MonoBehaviour
             oPos = UnityEngine.Random.Range(-12.2f, 1.72f);
 
 
-            if (pocetcyklu < 3)
+            if (pocetcyklu < 5)
             {
                 Instantiate(theEnemy, new Vector3(xPos, 1, zPos), Quaternion.identity);
                 yield return new WaitForSeconds(0.1f);
